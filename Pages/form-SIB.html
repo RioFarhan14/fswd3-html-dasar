@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran SIB</title>
+</head>
+<body>
+    <h1>Form Pendaftaran SIB 2023</h1>
+    <form>
+        <label for="nama">Nama Lengkap</label><br>
+        <input type="text" id="nama" placeholder="Masukkan nama lengkap" autocomplete="none"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" placeholder="Masukkan email" autocomplete="none"><br>
+        <label for="no.tlp">No. HP</label><br>
+        <input type="tel" id="no.tlp" placeholder="Masukkan No HP" autocomplete="none"><br>
+        <label for="jenis">Jenis Kelamin</label><br>
+        <input type="radio" name="jenis" value="pria">Laki-laki <br>
+        <input type="radio" name="jenis" value="perempuan">Perempuan <br>
+        <label for="jurusan">Jurusan</label><br>
+        <select name="jurusan">
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+        </select><br>
+        <label for="alamat">Alamat</label><br>
+        <textarea id="alamat" cols="30" rows="10" placeholder="Masukkan alamat"></textarea><br>
+        <label for="Foto">Foto</label><br>
+        <input type="file"  id="Foto"><br>
+        <input type="submit" value="Daftar">
+    </form>
+</body>
+</html>

@@ -14,9 +14,39 @@
 		padding: 5px;
 		font-size: 25px;
 	}
+	nav{
+		top: 30%;
+		left: 95%;
+		position: fixed;
+		display: flex;
+		background-color: #241916;
+		flex-direction: column;
+		border-radius: 18px;
+		transition: 0.3s ease;
+	}
+	nav>div{
+		padding: 18px;
+		width: 23vw;
+	}
+	nav>div>a{
+		color: #b4BDBA;
+		text-decoration: none;
+	}
+	nav>div>a:hover{
+		color: red;
+	}
+	nav:hover{
+		left: 75%;
+	}
 </style>
 </head>
 <body style="font-family: 'Tilt Neon', cursive; padding: 30px;">
+<nav>
+	<div><a href=""><i class="fa-solid fa-book fa-lg" style="padding-right: 27px;"></i>Nota Pembelian</a></div>
+	<div><a href=""><i class="fa-brands fa-youtube fa-lg" style="padding-right: 19px;"></i>Playlist video favorit Saya</a></div>
+	<div><a href=""><i class="fa-solid fa-newspaper fa-lg" style="padding-right: 24px;"></i>artikel</a></div>
+	<div><a href=""><i class="fa-solid fa-rectangle-list fa-lg" style="padding-right: 20px;"></i>Pendaftaran SIB</a></div>
+</nav>
 <div class="HTML">
 	<h1>HTML</h1>
 	<p>HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan untuk membuat konten untuk World Wide Web (WWW). HTML terdiri dari serangkaian tag dan atribut yang digunakan untuk mendefinisikan struktur dan tampilan halaman web. Dokumen HTML diinterpretasikan oleh web browser untuk menampilkan halaman web kepada pengguna.</p>
@@ -94,5 +124,6 @@
 <img src="assets/Twitter.jpg" width="100" alt="Twitter" />
 <img src="assets/Facebook.jpg" width="100" alt="Facebook" />
 <img src="assets/Instagram.png" width="100" alt="Instagram" />
+<script src="https://kit.fontawesome.com/6254853761.js" crossorigin="anonymous"></script>
 </body>
 </html>
