@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', 'cursive';
+    padding: 30px;
+}
+.prov{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+a{
+    padding: 5px;
+    font-size: 25px;
+}
+
+.arrow-nav{
+    top: 43%;
+    left: 91%;
+    width: max-content;
+    height: max-content;
+    position: fixed;
+    display: block;
+    background-color: #241916;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.open-arrow{
+    left: 62%;
+}
+input{
+    display: none;
+}
+#open {
+    display: block;
+  }
+#close{
+    display: none;
+}
+nav{
+    top: 15%;
+    left: 95%;
+    max-height: 63vh;
+    max-width: 41vw;
+    position: fixed;
+    display: flex;
+    background-color: #241916;
+    flex-direction: column;
+    border-radius: 18px;
+    transition: 0.3s ease;
+    overflow-y: scroll;
+
+}
+.style::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.style::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.style::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+nav>div{
+    padding: 18px;
+    width: 30vw;
+}
+nav>div>a{
+    color: #b4BDBA;
+    text-decoration: none;
+}
+nav>div>a:hover{
+    color: red;
+}
+.open-nav{
+    left: 66%;
+}

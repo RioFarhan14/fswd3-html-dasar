@@ -5,46 +5,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-<style>
-	body{
-		box-sizing: border-box;
-	}
-	.prov{
-		display: grid;
-		grid-template-columns: repeat(2,1fr);
-	}
-	a{
-		padding: 5px;
-		font-size: 25px;
-	}
-	nav{
-		top: 10%;
-		left: 95%;
-		position: fixed;
-		display: inline;
-		background-color: #241916;
-		flex-direction: column;
-		border-radius: 18px;
-		transition: 0.3s ease;
-	}
-	nav>div{
-		padding: 18px;
-		width: 30vw;
-	}
-	nav>div>a{
-		color: #b4BDBA;
-		text-decoration: none;
-	}
-	nav>div>a:hover{
-		color: red;
-	}
-	nav:hover{
-		left: 70%;
-	}
-</style>
+<link rel="stylesheet" href="assets/style_index.css">
 </head>
-<body style="font-family: 'Tilt Neon', cursive; padding: 30px;">
-<nav>
+<body>
+	<div class="arrow-nav" id="arrow">
+		<input type="checkbox" name="radio" id="checklist" onchange="openclose()">
+		<label for="checklist">
+			<i class="fa-solid fa-chevron-left" style="padding: 20px; color: blanchedalmond;" id="open"></i>
+			<i class="fa-solid fa-chevron-right" style="padding: 20px; color: blanchedalmond;" id="close"></i>
+		</label>
+	</div>
+<nav class="style">
 	<div><a href="Pages/Note.html"><i class="fa-solid fa-book fa-lg" style="padding-right: 27px;"></i>Nota Pembelian</a></div>
 	<div><a href="Pages/Playlist.html"><i class="fa-brands fa-youtube fa-lg" style="padding-right: 19px;"></i>Playlist video favorit Saya</a></div>
 	<div><a href="Pages/artikel.html"><i class="fa-solid fa-newspaper fa-lg" style="padding-right: 24px;"></i>artikel</a></div>
@@ -52,8 +23,18 @@
 	<div><a href="Pages/Galeri-bhs-bunga.html"><i class="fa-solid fa-images fa-lg" style="padding-right: 20px;"></i>Galeri Bahasa Bunga</a></div>
 	<div><a href="Pages/grid.html"><i class="fa-solid fa-table-cells fa-lg" style="padding-right: 24px;"></i>Display Grid</a></div>
 	<div><a href="Pages/flex.html"><i class="fa-solid fa-table-cells fa-lg" style="padding-right: 24px;"></i>Display Flex</a></div>
+	<div><a href="Pages/jankenpo.html"><i class="fa-regular fa-hand-scissors fa-lg" style="padding-right: 24px;"></i>Jankenpo</a></div>
+	<div><a href="Pages/code-structure.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Code Structure</a></div>
+	<div><a href="Pages/Variables.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Variables</a></div>
+	<div><a href="Pages/data-type.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Data Types</a></div>
+	<div><a href="Pages/Type-conversion.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Type Conversion</a></div>
+	<div><a href="Pages/operator.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Operators</a></div>
+	<div><a href="Pages/popup-modal.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Popup Modal</a></div>
+	<div><a href="Pages/conditionals.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Conditionals</a></div>
+	<div><a href="Pages/loop.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Loops</a></div>
+	<div><a href="Pages/Functions.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Functions</a></div>
 </nav>
-<div class="HTML">
+<div>
 	<h1>HTML</h1>
 	<p>HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan untuk membuat konten untuk World Wide Web (WWW). HTML terdiri dari serangkaian tag dan atribut yang digunakan untuk mendefinisikan struktur dan tampilan halaman web. Dokumen HTML diinterpretasikan oleh web browser untuk menampilkan halaman web kepada pengguna.</p>
 </div>
@@ -130,6 +111,7 @@
 <img src="assets/Twitter.jpg" width="100" alt="Twitter" />
 <img src="assets/Facebook.jpg" width="100" alt="Facebook" />
 <img src="assets/Instagram.png" width="100" alt="Instagram" />
+<script src="assets/index.js"></script>
 <script src="https://kit.fontawesome.com/6254853761.js" crossorigin="anonymous"></script>
 </body>
 </html>

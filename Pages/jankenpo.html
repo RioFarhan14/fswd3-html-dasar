@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jankenpo</title>
+</head>
+<body>
+    <script>
+    var nama = "";
+    let start = confirm("Apakah anda ingin Bermain Jankenpo?");
+            if( start == true){
+                while (!nama){ 
+                nama = prompt("Tolong masukkan nama anda :");
+                if (!nama){
+                    alert("Anda belum Memasukkan Nama !!");
+                }
+            } 
+                let choices = ["gunting", "batu", "kertas"];
+                let Random = choices[Math.floor(Math.random() * choices.length)];
+                let User = prompt("Pilih gunting, batu atau kertas :");
+                var UserChoices = User.toLowerCase();
+                if(Random === UserChoices){
+                    alert("Computer memilih : "+Random+"\n"+ nama+" memilih : "+UserChoices+"\nHasil Seri" );
+
+                }else if((UserChoices === "gunting" && Random === "kertas") || (UserChoices === "batu" && Random === "gunting") || (UserChoices === "kertas" && Random === "batu")) {
+                    alert("Computer memilih : "+Random+"\n"+ nama+" memilih : "+UserChoices+"\nKamu Menang" );
+
+                }else if ((UserChoices === "kertas" && Random === "gunting") || (UserChoices === "gunting" && Random === "batu") || (UserChoices === "batu" && Random === "kertas")) {
+                    alert("Computer memilih : "+Random+"\n"+ nama+" memilih : "+UserChoices+"\nKamu kalah" );
+                } else{
+                    alert("Computer memilih : "+Random+"\n"+ nama+" memilih : "+UserChoices+"\nErorr" );
+                }
+                let again = confirm("Apakah Anda ingin bermain lagi ?");
+                if (again == true){
+                location.reload();
+                }
+                else{
+                    alert('Terima Kasih Sudah Bermain');
+                }
+                
+            }else{
+                alert("Baiklah :)")
+            }
+
+
+        
+    </script>
+</body>
+</html>
