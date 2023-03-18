@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../assets/data_mahasiswa.js"></script>
+    <script>
+      const mhs = mahasiswa.map(getmahasiswa);
+      function getmahasiswa(value) {
+        return value;
+      }
+      console.log(mhs);
+      //Membuat array baru berdasarkan gender perempuan
+      var female = mahasiswa.filter(getfemale);
+      function getfemale(value) {
+        return value.gender == "F";
+      }
+
+      //Membuat array baru berdasarkan gender Laki-laki
+      var male = mahasiswa.filter(getmale);
+      function getmale(value) {
+        return value.gender == "M";
+      }
+
+      //Mencari Rata-rata perempuan
+      let ScoreFemale = female.reduce((total, value) => {
+        return total + value.score;
+      }, 0);
+      let avgScoreFemale = ScoreFemale / female.length;
+
+      //Mencari Rata-rata Laki-laki
+      let Scoremale = male.reduce((total, value) => {
+        return total + value.score;
+      }, 0);
+      let avgScoreMale = Scoremale / male.length;
+
+      //Mencari nilai Max perempuan
+      let FemalemaxScore = female.reduce(
+        (max, value) => (value.score > max ? value.score : max),
+        0
+      );
+
+      //Mencari nilai Max Laki-laki
+      let MalemaxScore = male.reduce(
+        (max, value) => (value.score > max ? value.score : max),
+        0
+      );
+
+      //Mencari nilai Min perempuan
+      let FemaleminScore = female.reduce(
+        (min, value) => (value.score < min ? value.score : min),
+        100
+      );
+
+      //Mencari nilai Min Laki-laki
+      let MaleminScore = male.reduce(
+        (min, value) => (value.score < min ? value.score : min),
+        100
+      );
+
+      const NewData = {
+        Female: {
+          count: female.length,
+          score: {
+            average: avgScoreFemale,
+            max: FemalemaxScore,
+            min: FemaleminScore,
+          },
+          students: female,
+        },
+        Male: {
+          count: male.length,
+          score: {
+            average: avgScoreMale,
+            max: MalemaxScore,
+            min: MaleminScore,
+          },
+          students: male,
+        },
+      };
+
+      console.log(NewData);
+    </script>
+  </body>
+</html>

@@ -1,117 +1,296 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Belajar HTML</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style_index.css">
-</head>
-<body>
-	<div class="arrow-nav" id="arrow">
-		<input type="checkbox" name="radio" id="checklist" onchange="openclose()">
-		<label for="checklist">
-			<i class="fa-solid fa-chevron-left" style="padding: 20px; color: blanchedalmond;" id="open"></i>
-			<i class="fa-solid fa-chevron-right" style="padding: 20px; color: blanchedalmond;" id="close"></i>
-		</label>
-	</div>
-<nav class="style">
-	<div><a href="Pages/Note.html"><i class="fa-solid fa-book fa-lg" style="padding-right: 27px;"></i>Nota Pembelian</a></div>
-	<div><a href="Pages/Playlist.html"><i class="fa-brands fa-youtube fa-lg" style="padding-right: 19px;"></i>Playlist video favorit Saya</a></div>
-	<div><a href="Pages/artikel.html"><i class="fa-solid fa-newspaper fa-lg" style="padding-right: 24px;"></i>artikel</a></div>
-	<div><a href="Pages/form-SIB.html"><i class="fa-solid fa-rectangle-list fa-lg" style="padding-right: 20px;"></i>Pendaftaran SIB</a></div>
-	<div><a href="Pages/Galeri-bhs-bunga.html"><i class="fa-solid fa-images fa-lg" style="padding-right: 20px;"></i>Galeri Bahasa Bunga</a></div>
-	<div><a href="Pages/grid.html"><i class="fa-solid fa-table-cells fa-lg" style="padding-right: 24px;"></i>Display Grid</a></div>
-	<div><a href="Pages/flex.html"><i class="fa-solid fa-table-cells fa-lg" style="padding-right: 24px;"></i>Display Flex</a></div>
-	<div><a href="Pages/jankenpo.html"><i class="fa-regular fa-hand-scissors fa-lg" style="padding-right: 24px;"></i>Jankenpo</a></div>
-	<div><a href="Pages/code-structure.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Code Structure</a></div>
-	<div><a href="Pages/Variables.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Variables</a></div>
-	<div><a href="Pages/data-type.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Data Types</a></div>
-	<div><a href="Pages/Type-conversion.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Type Conversion</a></div>
-	<div><a href="Pages/operator.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Operators</a></div>
-	<div><a href="Pages/popup-modal.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Popup Modal</a></div>
-	<div><a href="Pages/conditionals.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Conditionals</a></div>
-	<div><a href="Pages/loop.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Loops</a></div>
-	<div><a href="Pages/Functions.html"><i class="fa-brands fa-square-js fa-lg" style="padding-right: 28px;"></i>Functions</a></div>
-</nav>
-<div>
-	<h1>HTML</h1>
-	<p>HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan untuk membuat konten untuk World Wide Web (WWW). HTML terdiri dari serangkaian tag dan atribut yang digunakan untuk mendefinisikan struktur dan tampilan halaman web. Dokumen HTML diinterpretasikan oleh web browser untuk menampilkan halaman web kepada pengguna.</p>
-</div>
+  <head>
+    <title>Belajar HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style_index.css" />
+  </head>
+  <body>
+    <div class="arrow-nav" id="arrow">
+      <input
+        type="checkbox"
+        name="radio"
+        id="checklist"
+        onchange="openclose()"
+      />
+      <label for="checklist">
+        <i
+          class="fa-solid fa-chevron-left"
+          style="padding: 20px; color: blanchedalmond"
+          id="open"
+        ></i>
+        <i
+          class="fa-solid fa-chevron-right"
+          style="padding: 20px; color: blanchedalmond"
+          id="close"
+        ></i>
+      </label>
+    </div>
+    <nav class="style">
+      <div>
+        <a href="Pages/Note.html"
+          ><i class="fa-solid fa-book fa-lg" style="padding-right: 27px"></i
+          >Nota Pembelian</a
+        >
+      </div>
+      <div>
+        <a href="Pages/Playlist.html"
+          ><i class="fa-brands fa-youtube fa-lg" style="padding-right: 19px"></i
+          >Playlist video favorit Saya</a
+        >
+      </div>
+      <div>
+        <a href="Pages/artikel.html"
+          ><i
+            class="fa-solid fa-newspaper fa-lg"
+            style="padding-right: 24px"
+          ></i
+          >artikel</a
+        >
+      </div>
+      <div>
+        <a href="Pages/form-SIB.html"
+          ><i
+            class="fa-solid fa-rectangle-list fa-lg"
+            style="padding-right: 20px"
+          ></i
+          >Pendaftaran SIB</a
+        >
+      </div>
+      <div>
+        <a href="Pages/Galeri-bhs-bunga.html"
+          ><i class="fa-solid fa-images fa-lg" style="padding-right: 20px"></i
+          >Galeri Bahasa Bunga</a
+        >
+      </div>
+      <div>
+        <a href="Pages/grid.html"
+          ><i
+            class="fa-solid fa-table-cells fa-lg"
+            style="padding-right: 24px"
+          ></i
+          >Display Grid</a
+        >
+      </div>
+      <div>
+        <a href="Pages/flex.html"
+          ><i
+            class="fa-solid fa-table-cells fa-lg"
+            style="padding-right: 24px"
+          ></i
+          >Display Flex</a
+        >
+      </div>
+      <div>
+        <a href="Pages/jankenpo.html"
+          ><i
+            class="fa-regular fa-hand-scissors fa-lg"
+            style="padding-right: 24px"
+          ></i
+          >Jankenpo</a
+        >
+      </div>
+      <div>
+        <a href="Pages/code-structure.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Code Structure</a
+        >
+      </div>
+      <div>
+        <a href="Pages/Variables.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Variables</a
+        >
+      </div>
+      <div>
+        <a href="Pages/data-type.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Data Types</a
+        >
+      </div>
+      <div>
+        <a href="Pages/Type-conversion.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Type Conversion</a
+        >
+      </div>
+      <div>
+        <a href="Pages/operator.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Operators</a
+        >
+      </div>
+      <div>
+        <a href="Pages/popup-modal.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Popup Modal</a
+        >
+      </div>
+      <div>
+        <a href="Pages/conditionals.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Conditionals</a
+        >
+      </div>
+      <div>
+        <a href="Pages/loop.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Loops</a
+        >
+      </div>
+      <div>
+        <a href="Pages/Functions.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Functions</a
+        >
+      </div>
+      <div>
+        <a href="Pages/Maaping-data.html"
+          ><i
+            class="fa-brands fa-square-js fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >Mapping data mahasiswa</a
+        >
+      </div>
+      <div>
+        <a href="Pages/todolist.html"
+          ><i
+            class="fa-solid fa-pen-to-square fa-lg"
+            style="padding-right: 28px"
+          ></i
+          >To Do List</a
+        >
+      </div>
+    </nav>
+    <div>
+      <h1>HTML</h1>
+      <p>
+        HTML (Hypertext Markup Language) adalah bahasa markup yang digunakan
+        untuk membuat konten untuk World Wide Web (WWW). HTML terdiri dari
+        serangkaian tag dan atribut yang digunakan untuk mendefinisikan struktur
+        dan tampilan halaman web. Dokumen HTML diinterpretasikan oleh web
+        browser untuk menampilkan halaman web kepada pengguna.
+      </p>
+    </div>
     <h1>Text Formatting</h1>
-<p>Berikut ini adalah beberapa contoh text formatting:</p>
+    <p>Berikut ini adalah beberapa contoh text formatting:</p>
     <h1>heading</h1>
-	<strong>Bold text</strong><br>
-	<em>Italic text</em><br>
-	<u>Underlined text</u><br>
-	<del>Deleted text</del><br>
-	<mark>Highlighted text</mark><br>
-	<sup>Superscript text</sup><br>
-	<sub>Subscript text</sub><br>
+    <strong>Bold text</strong><br />
+    <em>Italic text</em><br />
+    <u>Underlined text</u><br />
+    <del>Deleted text</del><br />
+    <mark>Highlighted text</mark><br />
+    <sup>Superscript text</sup><br />
+    <sub>Subscript text</sub><br />
 
+    <h1>Ordered List</h1>
+    <p>Presiden Indonesia :</p>
+    <ol>
+      <li>Soekarno</li>
+      <li>Mohammad Hatta</li>
+      <li>Suharto</li>
+      <li>Bacharuddin Jusuf Habibie</li>
+      <li>Abdurrahman Wahid</li>
+      <li>Megawati Soekarnoputri</li>
+      <li>Susilo Bambang Yudhoyono</li>
+      <li>Joko Widodo</li>
+    </ol>
 
-<h1>Ordered List</h1>
-<p>Presiden Indonesia :</p>
-<ol>
-	<li>Soekarno</li>
-	<li>Mohammad Hatta</li>
-	<li>Suharto</li>
-	<li>Bacharuddin Jusuf Habibie</li>
-	<li>Abdurrahman Wahid</li>
-	<li>Megawati Soekarnoputri</li>
-	<li>Susilo Bambang Yudhoyono</li>
-	<li>Joko Widodo</li>
-</ol>
+    <h1>Unordered List</h1>
+    <p>Provinsi yang ada di Indonesia :</p>
+    <ul class="prov">
+      <li>Aceh</li>
+      <li>Bali</li>
+      <li>Banten</li>
+      <li>Bengkulu</li>
+      <li>Gorontalo</li>
+      <li>Jakarta</li>
+      <li>Jambi</li>
+      <li>Jawa Barat</li>
+      <li>Jawa Tengah</li>
+      <li>Jawa Timur</li>
+      <li>Kalimantan Barat</li>
+      <li>Kalimantan Selatan</li>
+      <li>Kalimantan Tengah</li>
+      <li>Kalimantan Timur</li>
+      <li>Kalimantan Utara</li>
+      <li>Kepulauan Riau</li>
+      <li>Lampung</li>
+      <li>Maluku</li>
+      <li>Maluku Utara</li>
+      <li>Nusa Tenggara Barat</li>
+      <li>Nusa Tenggara Timur</li>
+      <li>Papua</li>
+      <li>Papua Barat</li>
+      <li>Riau</li>
+      <li>Sulawesi Barat</li>
+      <li>Sulawesi Selatan</li>
+      <li>Sulawesi Tengah</li>
+      <li>Sulawesi Tenggara</li>
+      <li>Sulawesi Utara</li>
+      <li>Sumatera Barat</li>
+      <li>Sumatera Selatan</li>
+      <li>Sumatera Utara</li>
+    </ul>
 
-<h1>Unordered List</h1>
-<p>Provinsi yang ada di Indonesia :</p>
-<ul class="prov">
-	<li>Aceh</li>
-	<li>Bali</li>
-	<li>Banten</li>
-	<li>Bengkulu</li>
-	<li>Gorontalo</li>
-	<li>Jakarta</li>
-	<li>Jambi</li>
-	<li>Jawa Barat</li>
-	<li>Jawa Tengah</li>
-	<li>Jawa Timur</li>
-<li>Kalimantan Barat</li>
-<li>Kalimantan Selatan</li>
-<li>Kalimantan Tengah</li>
-<li>Kalimantan Timur</li>
-<li>Kalimantan Utara</li>
-<li>Kepulauan Riau</li>
-<li>Lampung</li>
-<li>Maluku</li>
-<li>Maluku Utara</li>
-<li>Nusa Tenggara Barat</li>
-<li>Nusa Tenggara Timur</li>
-<li>Papua</li>
-<li>Papua Barat</li>
-<li>Riau</li>
-<li>Sulawesi Barat</li>
-<li>Sulawesi Selatan</li>
-<li>Sulawesi Tengah</li>
-<li>Sulawesi Tenggara</li>
-<li>Sulawesi Utara</li>
-<li>Sumatera Barat</li>
-<li>Sumatera Selatan</li>
-<li>Sumatera Utara</li>
-</ul>
+    <h1>Anchor and Image</h1>
+    <p>Berikut ini adalah beberapa link ke sosial media saya:</p>
+    <a
+      href="https://www.linkedin.com/in/rio-farhan-avito-2007b923a/"
+      target="_blank"
+      >LinkedIn</a
+    >
+    <a href="https://www.instagram.com/riofarhan.1/" target="_blank"
+      >Instagram</a
+    >
+    <a href="https://github.com/RioFarhan14" target="_blank">GitHub</a>
 
-<h1>Anchor and Image</h1>
-<p>Berikut ini adalah beberapa link ke sosial media saya:</p>
-<a href="https://www.linkedin.com/in/rio-farhan-avito-2007b923a/" target="_blank">LinkedIn</a>
-<a href="https://www.instagram.com/riofarhan.1/" target="_blank">Instagram</a>
-<a href="https://github.com/RioFarhan14" target="_blank">GitHub</a>
-
-<p>Berikut ini adalah gambar logo dari beberapa sosial media:</p>
-<img src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_1280.png" alt="LinkedIn" width="100">
-<img src="assets/Twitter.jpg" width="100" alt="Twitter" />
-<img src="assets/Facebook.jpg" width="100" alt="Facebook" />
-<img src="assets/Instagram.png" width="100" alt="Instagram" />
-<script src="assets/index.js"></script>
-<script src="https://kit.fontawesome.com/6254853761.js" crossorigin="anonymous"></script>
-</body>
+    <p>Berikut ini adalah gambar logo dari beberapa sosial media:</p>
+    <img
+      src="https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668700_1280.png"
+      alt="LinkedIn"
+      width="100"
+    />
+    <img src="assets/Twitter.jpg" width="100" alt="Twitter" />
+    <img src="assets/Facebook.jpg" width="100" alt="Facebook" />
+    <img src="assets/Instagram.png" width="100" alt="Instagram" />
+    <script src="assets/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6254853761.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
