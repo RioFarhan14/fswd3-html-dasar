@@ -49,10 +49,10 @@ function deleteCheck(e) {
     todo.classList.toggle("completed");
     return;
   }
+  else if (item.classList[0] === "trash-btn") {
   document.getElementById("bgpop").style.display = "block";
   btnYes.addEventListener("click", () => {
     document.getElementById("bgpop").style.display = "none";
-    if (item.classList[0] === "trash-btn") {
       const todo = item.parentElement;
       todo.classList.add("slide");
 
@@ -60,8 +60,8 @@ function deleteCheck(e) {
       todo.addEventListener("transitionend", function () {
         todo.remove();
       });
-    }
-  });
+    
+  })};
 
   btnNo.addEventListener("click", () => {
     // balik ke nilai awal di sini

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/todolist.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="bgpop" id="bgpop">
+        <div class="popup">
+            <h1>Apakah anda yakin ingin menghapusnya ?</h1>
+            <div>
+            <button class="button-33 yes" role="button">Ya</button>
+            <button class="button-33 no" role="button">Tidak</button>
+            </div>
+        </div>
+    </div>
+    <header>
+      <h1>My To Do List</h1>
+    </header>
+    <form action="">
+      <input type="text" class="todo-input" placeholder="Masukkan kegiatan" />
+      <button class="todo-button" type="submit">
+        <i class="fa-solid fa-calendar-plus fa-lg"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+    <p id="warning">Anda belum memasukkan data</p>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6254853761.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/todolist(API).js"></script>
+  </body>
+</html>
